@@ -1,8 +1,7 @@
 using Test
-using Klar.Money: Monetary, M,
-                  AssetMismatch,
-                  convert,
-                  decimals, name
+using Money: Monetary, M,
+             AssetMismatch,
+             convert, decimals, name
 
 @test convert(Monetary{:EUR,18}, 10) == M(:EUR, "10")
 @test convert(Monetary{:USD,18}, 10) == M(:USD, "10")
