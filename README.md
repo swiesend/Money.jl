@@ -1,3 +1,5 @@
+[![Travis Build Status](https://travis-ci.org/swiesend/Money.jl.svg?branch=master)](https://travis-ci.org/swiesend/Money.jl)
+
 # Money
 
 A mini library to work with monetary values. Built with correctness in mind.
