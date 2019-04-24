@@ -1,0 +1,7 @@
+name = "Money"
+uuid = "2ab44ab6-6683-11e9-0c09-c1d7eb5e3b11"
+authors = ["swiesend <sebastian@wiesendahl.de>"]
+version = "0.1.0"
+
+[deps]
+FixedPointDecimals = "fb4d412d-6eee-574d-9565-ede6634db7b0"

@@ -1,0 +1,17 @@
+language: julia
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+os:
+  - linux
+  - osx
+
+notifications:
+  email: false
+
+# after_success:
+#   - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'
+#   - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
