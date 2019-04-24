@@ -30,8 +30,6 @@ using Money: Monetary, M,
 EUR_10_57 = M(:EUR, "10.57")
 EUR_0_533 = M(:EUR, "0.533")
 USD_N_0_533 = M(:USD, "-0.533")
-# USD_10 = M(:USD, 10)
-# USD_10_33 = M(:USD, "10.33")
 
 @test decimals(EUR_10_57) == 18
 @test name(EUR_10_57) == :EUR
@@ -107,15 +105,3 @@ USD_N_0_533 = M(:USD, "-0.533")
 @test flipsign(M(:EUR, 5),  "1") == M(:EUR,  "5.0")
 @test flipsign(M(:EUR, 5),  -1)  == M(:EUR, "-5.0")
 @test flipsign(M(:EUR, 5), "-1") == M(:EUR, "-5.0")
-
-# using Printf
-# s1 = @sprintf "%.2f" 20.33
-# s2 = @sprintf "%.14f" 20.33
-# s3 = @sprintf "%.15f" 20.33
-# s4 = @sprintf "%.40f" 20.33
-# s5 = @sprintf "%.2f"  BigFloat(20.33)
-# s6 = @sprintf "%.14f" BigFloat(20.33)
-# s7 = @sprintf "%.15f" BigFloat(20.33)
-# s8 = @sprintf "%.40f" BigFloat(20.33)
-# EUR_20_33_Float64 = M(:EUR, s1)
-# EUR_20_33_BigFloat = M(:EUR, s5)
