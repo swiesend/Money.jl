@@ -8,7 +8,7 @@ Monetary values are represented as [FixedPointDecimals](https://github.com/Julia
 using Test
 using Money
 
-EUR_10_57 = Monetary(:EUR, "10.57")
+EUR_10_57 = Monetary(:EUR, "10.57") # EUR 10.570000000000000000
 
 using Money: M
 
